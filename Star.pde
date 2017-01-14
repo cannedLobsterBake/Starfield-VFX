@@ -22,7 +22,7 @@ class Star {
    z = z - speed;
    
    //Resets star randomly when star moves out of canvas
-   if (z < max(abs(x), abs(y))) {
+   if (z < 1) {
     x = random(-width / 2, width / 2);
     y = random(-height / 2, height / 2);
     z = width / 2;
